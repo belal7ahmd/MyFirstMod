@@ -1,0 +1,38 @@
+{
+	"schemaVersion": 1,
+	"id": "firstmod",
+	"version": "${version}",
+	"name": "My First Mod",
+	"description": "Best Game Ever",
+	"authors": [
+		"The Best Developer Ever ME!"
+	],
+	"contact": {
+		"homepage": "I Don't Have a One",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/firstmod/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"net.belal.firstmod.MyFirstMod"
+		],
+		"fabric-datagen": [
+			"net.belal.firstmod.MyFirstModDataGenerator"
+		],
+		"client": ["net.belal.firstmod.MyFirstModClient"]
+	},
+	"mixins": [
+		"firstmod.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.9",
+		"minecraft": "~1.21",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}
